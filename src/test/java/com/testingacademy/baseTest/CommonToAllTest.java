@@ -4,7 +4,7 @@ import com.testingacademy.driver.DriverManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class CommonToAllTests {
+public class CommonToAllTest {
 
     //To call the start the WebDriver
     //Down the WebDriver
