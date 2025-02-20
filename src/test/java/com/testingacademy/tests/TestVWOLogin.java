@@ -13,7 +13,7 @@ public class TestVWOLogin {
     @Test
     public void testLoginNegative() {
         LoginPage_POM loginPagePom = new LoginPage_POM();
-        String error_msgText = loginPagePom.loginToVWONegative();
+        String error_msgText = loginPagePom.loginToVWOInvalidCred();
         Assert.assertEquals(error_msgText, "Your email, password, IP address or location did not match");
 
 

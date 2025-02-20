@@ -17,6 +17,7 @@ public class DriverManager {
     public static void init(){
         if (driver == null){
             driver = new EdgeDriver();
+            driver.manage().window().maximize();
         }
     }
 

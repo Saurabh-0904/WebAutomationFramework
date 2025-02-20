@@ -1,5 +1,6 @@
 package com.testingacademy.base;
 
+import com.testingacademy.utils.PropertyReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,7 +22,7 @@ public class CommonToAll {
     //This is common to all pages
 
     public void openVWOLoginURL(){
-        getDriver().get("https://app.vwo.com");
+        getDriver().get(PropertyReader.readkey("url"));
 
     }
 
