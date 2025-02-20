@@ -4,7 +4,6 @@ import com.testingacademy.base.CommonToAll;
 import com.testingacademy.utils.PropertyReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
 public class LoginPage_POM extends CommonToAll {
 
@@ -16,10 +15,10 @@ public class LoginPage_POM extends CommonToAll {
     }
 
     //Page Locators
-By username = By.id("login-username");
-By password = By.id("login-password");
-By signinButton = By.id("js-login-btn");
-By error_message = By.className("notification-box-description");
+private By username = By.id("login-username");
+private By password = By.id("login-password");
+private By signinButton = By.id("js-login-btn");
+private By errorMessage = By.className("notification-box-description");
 
 
 
@@ -28,9 +27,9 @@ public String loginToVWOInvalidCred() {
     enterInput(username, PropertyReader.readkey("valid_username"));
     enterInput(password, "admin");
     clickElement(signinButton);
-    presenceOfElement(error_message);
-    visibilityOfElement(error_message);
-    return getElement(error_message).getText();
+    presenceOfElement(errorMessage);
+    visibilityOfElement(errorMessage);
+    return getElement(errorMessage).getText();
 
 
 }

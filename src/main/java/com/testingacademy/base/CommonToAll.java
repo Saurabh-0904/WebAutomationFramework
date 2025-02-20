@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static com.testingacademy.driver.DriverManager.driver;
 import static com.testingacademy.driver.DriverManager.getDriver;
+//import static com.testingacademy.driver.DriverManagerTL.getDriver;
 
 public class CommonToAll {
 
