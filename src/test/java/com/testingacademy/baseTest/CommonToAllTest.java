@@ -6,10 +6,10 @@ import org.testng.annotations.BeforeMethod;
 
 public class CommonToAllTest {
 
-    //To call the start the WebDriver
+    //To call or to start the WebDriver
     //Down the WebDriver
 
-    //Who will Start the WEbDriver?
+    //Who will Start the WebDriver?
 
     //Start the WebDriver
     @BeforeMethod

@@ -1,3 +1,4 @@
+/*
 package com.testingacademy.tests;
 
 import com.testingacademy.pages.pageObjectModel.LoginPage_POM;
@@ -15,3 +16,4 @@ public class TestVWOLoginPOM {
 
     }
 }
+*/

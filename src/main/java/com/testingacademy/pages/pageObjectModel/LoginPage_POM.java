@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage_POM extends CommonToAll {
 
-    WebDriver driver;
+    //WebDriver driver;
 
     //Constructor
     public LoginPage_POM(){
@@ -41,6 +41,7 @@ public String loginToVWOInvalidCred() {
         //By using valid credential we will get Dashboard page
     }
 
+    //To pass the Webdriver focus to dashboard Page from login Page
     public DashboardPage_POM afterLoginVWOValidCred(){
 
     return new DashboardPage_POM();

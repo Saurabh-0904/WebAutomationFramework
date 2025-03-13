@@ -15,7 +15,7 @@ public class CommonToAll {
 
     public CommonToAll(){
 
-        //If you want to call something before every Page Object Class call, put your code here"
+        //If you want to call something before every Page Object Class call, put your code here
         //Open file, Open Data Base Connection you can write code here
     }
 

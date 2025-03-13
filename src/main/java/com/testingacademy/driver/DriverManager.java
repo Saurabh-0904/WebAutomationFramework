@@ -1,6 +1,7 @@
 package com.testingacademy.driver;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterMethod;
@@ -17,12 +18,12 @@ public class DriverManager {
 
     public static void init(){
         if (driver == null){
-            EdgeOptions edgeOptions = new EdgeOptions();
-            edgeOptions.addArguments("--start-maximized");
-            edgeOptions.addArguments("--guest");
+            //EdgeOptions edgeOptions = new EdgeOptions();
+            //edgeOptions.addArguments("--start-maximized");
+            //edgeOptions.addArguments("--guest");
             //edgeOptions.addArguments("--headless");
-            driver = new EdgeDriver(edgeOptions);
-            //driver.manage().window().maximize();
+            driver = new ChromeDriver();
+            driver.manage().window().maximize();
         }
     }
 
